@@ -7,9 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="icon" href="data:,">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
+    <link rel="preload" href="js/script.js" as="script">
+
+    <noscript>
+	<link href="css/style.css" rel="style">
+    </noscript>
 </head>
 <body>
     <div class="container">
@@ -92,5 +96,6 @@
         </div>
     </div>
 
+    <script href="js/script.js" defer><script>
 </body>
 </html> 
